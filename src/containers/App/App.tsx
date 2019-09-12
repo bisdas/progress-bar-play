@@ -23,14 +23,10 @@ class App extends React.Component<IAppProps, IAppState> {
   }
 
   public componentDidMount() {
-
     const apiUtility = new APIUtility();
     apiUtility
       .GetData(this.props.apiUrl)
       .then(response => {
-        // response = JSON.parse('{"buttons":[5,25,-48,-12],"bars":[61,45,49,85],"limit":210}')
-        // response = JSON.parse('{"buttons":[5,25,-48,-12, -1, 1],"bars":[20, 21, 25, 50, 5],"limit":50}')
-
         const barsc = response.data.bars.map((value: number, index: number) => {
           const progress = MathUtility.calculatePercentage(value, response.data.limit);
           return [index, progress, progress];
