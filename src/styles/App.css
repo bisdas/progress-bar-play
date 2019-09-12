@@ -1,0 +1,49 @@
+.pb-progress-bar-selector { 
+	display: inline;
+    margin: 4px;
+}
+
+.pb-select{
+	height: 30px;
+    line-height: 30px;
+}
+
+.pb-button{
+	margin: 0 4px;
+    padding: 0 10px;
+}
+
+.pb-buttons{
+  display: inline;
+}
+
+.pb-controls{
+  margin: 10px 0 4px;
+}
+
+.progress { 
+  display: flex;
+  height: 2rem;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: #e9ecef;
+  border-radius: 0;
+  margin: 4px;
+}
+
+.pb-spinner{ 
+	width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.bg-info{
+  background-color: #007bff;
+}
+
+.pb-error {
+	background-color: #ffe1e1;
+  border: 1px solid #f19d9d;
+  color: #f35b5b;
+  padding: 10px;
+} 
